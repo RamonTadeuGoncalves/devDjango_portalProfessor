@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title%}
+LISTA
+{% endblock%}
+{% block content%}
+<a href="/adiciona/">Adicionar novo professor</a>
+<ul>
+    {% for item in lista_itens %}
+        <li>
+            <a href="/item/{{ item.id }}">
+                {{item.matricula}} {{item.nome}} {{item.endereco}} {{item.telefone}} {{item.titulacao}}
+            </a>
+        </li>
+    {% empty %}
+        <li>Sem professores cadastrados</li>
+    {% endfor %}
+</ul>
+{% endblock %}

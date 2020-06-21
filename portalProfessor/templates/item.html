@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title%}
+ITEM
+{% endblock%}
+{% block content%}
+
+<h1>{{ item.nome }}</h1>
+<p>{{ item.matricula }}</p>
+<pre>
+    {{item.titulacao}} - {{item.endereco}} - {{item.titulacao}}
+</pre>
+<p><a href="/lista/">Voltar</a></p>
+
+{% endblock %}
