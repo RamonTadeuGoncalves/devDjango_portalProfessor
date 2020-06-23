@@ -3,12 +3,15 @@
 ITEM
 {% endblock%}
 {% block content%}
+{% load static %}
 
 <h1>{{ item.nome }}</h1>
 <p>{{ item.matricula }}</p>
 <pre>
     {{item.titulacao}} - {{item.endereco}} - {{item.titulacao}}
 </pre>
-<p><a href="/lista/">Voltar</a></p>
+<a id="formularioCancelar" class="btn btn-primary" href="/lista/">Voltar</a>
+<a id="formularioCancelar" class="btn btn-secondary" href="/excluir/{{item.id}}/">Excluir</a>
+<a id="formularioCancelar" class="btn btn-primary" href="/editar/?id={{item.id}}">Editar</a>
 
 {% endblock %}

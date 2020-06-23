@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block title%}
-LISTA
+HOME
 {% endblock%}
 {% block content%}
 {% load static %}
@@ -14,7 +14,7 @@ LISTA
       
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item ">
               <a class="nav-link" href="/lista/">Listar <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -29,16 +29,32 @@ LISTA
 
 </div>  
 
-<ul>
-    {% for item in lista_itens %}
-        <li>
-            <a href="/item/{{ item.id }}">
-                {{item.matricula}} {{item.nome}} {{item.endereco}} {{item.telefone}} {{item.titulacao}}
-            </a>
-        </li>
-    {% empty %}
-        <li>Sem professores cadastrados</li>
-    {% endfor %}
-</ul>
+<div align="center">    
+
+    <div class="titleHomepage">
+        <h2>Bem-Vindo</h2>        
+        <h1>PORTAL PROFESSOR</h1>
+        <div class="titleH3">
+            <h3>Gerencie os professores de sua empresa em um só lugar</h3>
+            <h3>Cadastro simples e rápido</h3>
+            <h3>Crie, Edite e Gerencie</h3>
+        </div>
+        
+    </div>   
+    <div class="description">
+        <p></p>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="footerHomepage">
+        <footer>          
+          <p>Desenvolvido por: Ramon Gonçalves</p>            
+          <a href="https://www.linkedin.com/in/ramon-gon%C3%A7alves-a900bb190/" target="_blank"><img src="{% static "/media/img_linkedin_01.png" %}" alt=""></a>
+          <a href="https://github.com/RamonTadeuGoncalves" target="_blank"><img src="{% static "/media/img_github_01.png" %}" alt=""></a>
+        </footer>
+    </div>
+</div>
 
 {% endblock %}

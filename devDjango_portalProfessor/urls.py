@@ -17,10 +17,21 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
 from portalProfessor import views
+from django.views.generic import RedirectView
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls), 
+    path('', RedirectView.as_view(url='home/')),   
     path('lista/', views.lista),
     path('adiciona/', views.adiciona),
     path('item/<int:nr_item>/', views.item),
+    path('', views.lista),
+    path('home/', views.home),
+    path('contato/', views.contato),
+    path('excluir/<int:nr_item>/', views.excluir_professor),
+    path('/excluir/<int:nr_item>/lista/', views.lista),
+    path('editar/', views.editar),
+    path('editar/submit', views.submit_editar),
+    
+        
 ]

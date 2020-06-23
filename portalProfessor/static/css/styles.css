@@ -1,0 +1,91 @@
+#body{
+    background-color: #343a40;
+}
+
+.titleHomepage{
+    color: white;
+    margin-top: 100px;
+}
+
+h2{    
+    padding-bottom: 30px;
+}
+
+.titleH3{
+    padding-top: 30px;
+}
+
+.footerHomepage{
+    background-color: #343a40;
+    color: white;
+    margin-top: 120px;
+    padding: 30px 0 20px 0; 
+    font-size: 14px;
+    text-align: center;   
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+
+.imgFooter{
+    width: 50px;
+}
+
+/*Formulário Adiciona*/
+#formularioAdiciona{
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    height: 420px;
+}
+#elementosFormularioAdiciona{
+    margin-left: 200px;
+    margin-right: -300px;
+}
+#tituloFormularioAdiciona{
+    margin-top: 20px;
+    font-size: 28px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    font-family:'Times New Roman';
+    font-weight: bold;
+    text-align: center;
+}
+
+#formularioCancelar{
+    margin-left: 240px;
+    margin-top: 15px;
+}
+
+#formularioCadastrar{
+    margin-left: 190px;
+    margin-top: 15px;
+}
+
+#formularioAjuda{    
+    margin-left: 215px;
+}
+
+/*Formulário Adiciona*/
+#formularioSalvo{
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    height: 420px;
+}
+
+#tituloFormularioSalvo{
+    margin-top: 20px;
+    font-size: 28px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    font-family:'Times New Roman';
+    font-weight: bold;
+    text-align: center;
+}
+
+#formularioVoltar{
+    margin-top: 350px;
+    margin-left: 450px;
+}
