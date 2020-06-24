@@ -32,17 +32,42 @@ h2{
 }
 
 /*Formulário Adiciona*/
-#formularioAdiciona{
-    background-color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    height: 420px;
+
+.containerFormulario {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
 }
-#elementosFormularioAdiciona{
-    margin-left: 200px;
-    margin-right: -300px;
+  
+.col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
 }
+    
+    
+.col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+      margin-left: 15%;
+}
+  
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+}
+    
+#formularioBotao{
+        margin-left: 15%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+}
+
 #tituloFormularioAdiciona{
     margin-top: 20px;
     font-size: 28px;
@@ -53,21 +78,8 @@ h2{
     text-align: center;
 }
 
-#formularioCancelar{
-    margin-left: 240px;
-    margin-top: 15px;
-}
-
-#formularioCadastrar{
-    margin-left: 190px;
-    margin-top: 15px;
-}
-
-#formularioAjuda{    
-    margin-left: 215px;
-}
-
 /*Formulário Adiciona*/
+
 #formularioSalvo{
     background-color: white;
     margin-left: 50px;
@@ -145,3 +157,10 @@ h2{
     margin-bottom: 50px;
     
 }
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
