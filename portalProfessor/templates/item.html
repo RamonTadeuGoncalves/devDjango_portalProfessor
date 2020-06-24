@@ -5,13 +5,68 @@ ITEM
 {% block content%}
 {% load static %}
 
-<h1>{{ item.nome }}</h1>
-<p>{{ item.matricula }}</p>
-<pre>
-    {{item.titulacao}} - {{item.endereco}} - {{item.titulacao}}
-</pre>
-<a id="formularioCancelar" class="btn btn-primary" href="/lista/">Voltar</a>
-<a id="formularioCancelar" class="btn btn-secondary" href="/excluir/{{item.id}}/">Excluir</a>
-<a id="formularioCancelar" class="btn btn-primary" href="/editar/?id={{item.id}}">Editar</a>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/lista/">Listar <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/adiciona/">Adicionar</a>
+            </li>                             
+          </ul>
+          <div class="form-inline my-2 my-lg-0">
+            <a class="nav-link" href="/contato/">Contato</a>        
+          </div>
+        </div>
+    </nav>
+</div>
+
+<div id="tituloFormularioAdiciona">
+    <p>DETALHES DO CADASTRO.</p>
+</div>
+
+<div class="container">
+    <div id="formularioDetalhes">
+        <div id="elementosFormularioDetalhes">
+            <h1 id="tituloDetalhes">{{ item.nome }}</h1>
+            <div class="form-row">
+                <div class="form-group col-lg-3">
+                    <h5>Titulação: {{item.titulacao}}</h5>
+                </div>
+                <div class="form-group col-lg-3">
+                    <h5>Matrícula: {{ item.matricula }}</h5>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-lg-3">
+                    <h5>Endereço: {{item.endereco}}</h5>
+                </div>
+                <div class="form-group col-lg-3">
+                    <h5>Telefone: {{item.telefone}}</h5>                    
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-lg-2">                    
+                    <a id="detalhesBotao" class="btn btn-primary" href="/lista/">Voltar</a>
+                </div>
+                <div class="form-group col-lg-2">
+                    <a id="detalhesBotao" class="btn btn-secondary" href="/excluir/{{item.id}}/">Excluir</a>
+                </div>
+                <div class="form-group col-lg-2">
+                    <a id="detalhesBotao" class="btn btn-primary" href="/editar/?id={{item.id}}">Editar</a>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}

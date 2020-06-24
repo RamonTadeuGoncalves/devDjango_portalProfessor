@@ -26,19 +26,31 @@ LISTA
           </div>
         </div>
     </nav>
-
 </div>  
 
-<ul>
-    {% for item in lista_itens %}
-        <li>
-            <a href="/item/{{ item.id }}">
-                {{item.matricula}} {{item.nome}} {{item.endereco}} {{item.telefone}} {{item.titulacao}}
-            </a>
+<div id="tituloFormularioAdiciona">
+  <p>LISTA DE PROFESSORES.</p>
+</div>
+
+<div class="container">
+
+  <div id="formularioLista">
+    <div id="elementosFormularioLista">           
+      <ul>
+        {% for item in lista_itens %}
+        <li id="lista">
+          <a href="/item/{{ item.id }}" id="listaProfessores">
+            {{item.titulacao}} - {{item.nome}} 
+          </a>
         </li>
-    {% empty %}
-        <li>Sem professores cadastrados</li>
-    {% endfor %}
-</ul>
+        {% empty %}
+          <div id="tituloFormularioSemProfessor">
+            <p>SEM PROFESSORES CADASTRADOS.</p>
+          </div>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
 
 {% endblock %}

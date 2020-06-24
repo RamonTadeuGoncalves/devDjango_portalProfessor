@@ -15,19 +15,20 @@ h2{
     padding-top: 30px;
 }
 
-.footerHomepage{
+#footerHomepage{
     background-color: #343a40;
     color: white;
-    margin-top: 120px;
+    margin-top: 90px;
     padding: 30px 0 20px 0; 
     font-size: 14px;
     text-align: center;   
     text-shadow: 2px 2px 2px black;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
-.imgFooter{
-    width: 50px;
+#imgFooter{
+    
+    width: 25px;
 }
 
 /*Formulário Adiciona*/
@@ -88,4 +89,59 @@ h2{
 #formularioVoltar{
     margin-top: 350px;
     margin-left: 450px;
+}
+
+/*Lista de professores*/
+#formularioLista{
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    height: 420px;
+}
+#elementosFormularioLista{
+    margin-left: 200px;
+    margin-right: -300px;
+}
+
+#tituloFormularioSemProfessor{
+    padding-top: 160px;
+    font-size: 28px;
+    color: red;
+    font-family:'Times New Roman';
+    font-weight: bold;    
+}
+
+#listaProfessores{
+    font-size: 30px;
+    color: black;
+}
+
+#lista{
+    padding-top: 10px;
+}
+
+/*Detalhes Cadastro*/
+#formularioDetalhes{
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    height: 420px;
+}
+#elementosFormularioDetalhes{
+    margin-left: 250px;
+    margin-right: -300px;
+}
+
+#detalhesBotao{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+#tituloDetalhes{
+    padding-top: 30px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    
 }
