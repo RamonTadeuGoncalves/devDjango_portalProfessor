@@ -6,7 +6,7 @@ from .forms import ProfessorForm
 
 # Create your views here.
 
-def lista(request):
+def listar(request):
     lista_itens = Professor.objects.all()
     return render(request, 'lista.html', {'lista_itens': lista_itens})
 
@@ -19,25 +19,30 @@ def editar(request):
     
     return render(request, 'edita.html', dados)
 
-    
-
-def submit_editar(request):
+def atualizar(request, nr_item):    
+    item = get_object_or_404(Professor, pk=nr_item)
+    form = ProfessorForm(instance=item)
     if request.method == 'POST':
-        matricula = request.POST.get('item.matricula')
-        nome = request.POST.get('nome')
-        titulacao = request.POST.get('titulacao')
-        endereco = request.POST.get('endereco')
-        telefone = request.POST.get('telefone')
-        id_professor = request.POST.get('id_professor')
-        if id_professor:
-            print(matricula)
+        form = ProfessorForm(request.POST, instance=item)
+        if form.is_valid():
+            item = form.save(commit=False)
+            item.matricula = form.cleaned_data['matricula']
+            item.nome = form.cleaned_data['nome']
+            item.endereco = form.cleaned_data['endereco']
+            item.telefone = form.cleaned_data['telefone']
+            item.titulacao = form.cleaned_data['titulacao']
+
+            item.save()
+
+            return render(request, 'atualizado.html', {})
+        
+        else:
+            return render(request, 'adiciona.html', {'form':form, 'item': item})
     
-    return redirect('/')
+    elif (request.method == 'GET'):
+        return render(request, 'edita.html', {'form':form, 'item': item})
 
-
-
-
-def adiciona(request):
+def adicionar(request):
     if request.method == 'POST':
         form = ProfessorForm(request.POST)
         if form.is_valid():

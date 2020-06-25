@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 {% block title%}
-ADICIONA
+SALVO
 {% endblock%}
 {% block content%}
-{% load crispy_forms_tags %}
 {% load static %}
 
 <div class="container">
@@ -31,40 +30,20 @@ ADICIONA
 </div>
 
 <div id="tituloPaginas">
-  <p>FORMULÁRIO PARA CADASTRO DE PROFESSORES.</p>
+    <p>CADASTRADO ATUALIZADO COM SUCESSO!</p>
 </div>
 
-<div class="containerFormulario">
+<div class="containerformularioSalvo">
 
-  <form action="" method="POST">
-    {% csrf_token %}
-    <div class="row">
-      <div class="col-75"> 
-          {{ form.matricula|as_crispy_field }}                            
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-75">
-          {{ form.nome|as_crispy_field }}              
-      </div>
-      <div class="col-75">
-          {{ form.titulacao|as_crispy_field }}              
-      </div>          
-    </div>
-    <div class="row">
-      <div class="col-75">
-          {{ form.endereco|as_crispy_field }}
-      </div>
-      <div class="col-75"> 
-          {{ form.telefone|as_crispy_field }}
-      </div>
-    </div>
-    <div class="row">
-      <button id="formularioBotao" type="submit" class="btn btn-primary">Cadastrar</button>      
-      <a id="formularioBotao" class="btn btn-secondary" href="/">Cancelar</a>
-      <p id="formularioBotao">*Campos Obrigatórios.</p>
-    </div>
-  </form>
+  <div class="row">
+    <img class="imgFormularioSalvo" src="{% static "/media/img_salvo_01.png" %}">
+  </div>
+  <div class="row">
+    <a id="formularioVoltar"  class="btn btn-secondary" href="/lista/">Voltar</a>
+  </div>
+    <div class="formularioVoltar">    
+  </div>
+
 </div>
 
 {% endblock %}

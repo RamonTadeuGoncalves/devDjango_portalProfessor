@@ -3,6 +3,7 @@
 EDITA
 {% endblock%}
 {% block content%}
+{% load crispy_forms_tags %}
 {% load static %}
 
 <div class="container">
@@ -35,43 +36,27 @@ EDITA
 
 <div class="containerFormulario">
 
-  <form action="submit" method="POST">
+  <form action="" method="POST">
     {% csrf_token %}
-    <input type="number" name="id_professor" value="{{professor.id}}" hidden>
     <div class="row">
-      <div class="col-35"><br/>
-          <label>Matrícula*</label>
-      </div>
-      <div class="col-85">        
-        <input type="text" value="{{ professor.matricula }}">
+      <div class="col-75"> 
+          {{ form.matricula|as_crispy_field }}                            
       </div>
     </div>
     <div class="row">
-      <div class="col-35">
-          <label>Nome*</label>
+      <div class="col-75">
+          {{ form.nome|as_crispy_field }}              
       </div>
-      <div class="col-85">
-        <input type="text" value="{{ professor.nome }}">
-      </div>
-      <div class="col-35">
-          <label>Titulação*</label>
-      </div>
-      <div class="col-85">
-        <input type="text" value="{{ professor.titulacao }}">
+      <div class="col-75">
+          {{ form.titulacao|as_crispy_field }}              
       </div>          
     </div>
     <div class="row">
-      <div class="col-35">
-          <label>Endereço*</label>
+      <div class="col-75">
+          {{ form.endereco|as_crispy_field }}
       </div>
-      <div class="col-85">
-        <input type="text" value="{{ professor.endereco }}">
-      </div>
-      <div class="col-35">
-          <label>Telefone*</label>
-      </div>
-      <div class="col-85">
-        <input type="text" value="{{ professor.telefone }}">
+      <div class="col-75"> 
+          {{ form.telefone|as_crispy_field }}
       </div>
     </div>
     <div class="row">
