@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block title%}
-HOME
+PORTAL PROFESSOR - Home
 {% endblock%}
 {% block content%}
 {% load static %}
@@ -10,24 +10,22 @@ HOME
         <a class="navbar-brand" href="/">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-      
+        </button>      
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item ">
+            <li class="nav-item">
               <a class="nav-link" href="/lista/">Listar <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/adiciona/">Adicionar</a>
             </li>                             
           </ul>
-          <div class="form-inline my-2 my-lg-0">
-            <a class="nav-link" href="/contato/">Contato</a>        
-          </div>
+          <ul class="navbar-nav mr-4 mt-2 mt-lg-0">
+            <a class="nav-link" href="/contato/">Contato</a>            
+          </ul>          
         </div>
     </nav>
-
-</div>  
+</div>
 
 <div class="containerHomePage">
   <div class="titleHomepage">
