@@ -191,6 +191,38 @@ h3{
     resize: both;
 }
 
+/* Formulário Edita */
+
+input[type=text], select, textarea{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+label {
+   
+    display: inline-block;
+  }
+
+.col-35 {
+    float: left;
+    margin-left: 15%;
+    width: 25%;
+    margin-top: 6px;
+    margin-bottom: -1%;
+}
+
+.col-85 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+
 @media screen and (max-width: 600px) {
     .col-25, .col-75, .detalhesTitulacaoEndereco, .detalhesMatriculaTelefone,
     .botoes, .titleHomepage, .h1HomePage, .titleH3, .imgFormularioSalvo {

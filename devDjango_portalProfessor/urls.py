@@ -32,6 +32,4 @@ urlpatterns = [
     path('/excluir/<int:nr_item>/lista/', views.lista),
     path('editar/', views.editar),
     path('editar/submit', views.submit_editar),
-    
-        
 ]

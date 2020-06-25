@@ -17,7 +17,7 @@ EDITA
             <li class="nav-item">
               <a class="nav-link" href="/lista/">Listar <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="/adiciona/">Adicionar</a>
             </li>                             
           </ul>
@@ -30,69 +30,56 @@ EDITA
 </div>
 
 <div id="tituloPaginas">
-  <p>FORMULÁRIO PARA CADASTRO DE PROFESSORES.</p>
+  <p>EDITAR DADOS DO CADASTRO.</p>
 </div>
 
-<div class="container">
+<div class="containerFormulario">
 
-  <div id="formularioAdiciona">
-    <div id="elementosFormularioAdiciona">
-      <form action="submit" method="POST">
-          {% csrf_token %}
-          <input type="numbe" name="id_professor" value="{{professor.id}}" hidden>
-          <div class="form-row">
-            <div class="form-group col-lg-4">              
-                <br/>
-                <label>Matrícula*</label>
-                <br/>
-                {{ form.matricula }}
-                <input type="" value="{{ professor.matricula }}" >             
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-lg-4">                            
-                <br/>
-                <label>Nome*</label>
-                <br/>              
-                {{ form.nome }}
-                <input type="" value="{{ professor.nome }}" >           
-            </div>
-            <div class="form-group col-lg-4">              
-                <br/>
-                <label>Titulação*</label>
-                <br/>
-                {{ form.titulacao }}
-                <input type="" value="{{ professor.titulacao }}" >           
-            </div>          
-          </div>
-          <div class="form-row">
-            <div class="form-group col-lg-4">              
-                <br/>
-                <label>Endereço*</label>
-                <br/>
-                {{ form.endereco }}
-                <input type="" value="{{ professor.endereco }}" >
-            </div>
-            <div class="form-group col-lg-4">              
-                <br/>
-                <label>Telefone*</label>
-                <br/>
-                {{ form.telefone }}
-                <input type="" value="{{ professor.telefone }}" >
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group col-lg-1">
-              <button id="formularioCadastrar" type="submit" class="btn btn-primary">Salvar</button>              
-            </div>            
-            <div class="form-group col-lg-1">                     
-              <a id="formularioCancelar" class="btn btn-secondary" href="/lista/">Cancelar</a>
-            </div>            
-          </div>          
-          <p id="formularioAjuda">*Campos Obrigatórios.</p>                                 
-      </form>
+  <form action="submit" method="POST">
+    {% csrf_token %}
+    <input type="number" name="id_professor" value="{{professor.id}}" hidden>
+    <div class="row">
+      <div class="col-35"><br/>
+          <label>Matrícula*</label>
+      </div>
+      <div class="col-85">        
+        <input type="text" value="{{ professor.matricula }}">
+      </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-35">
+          <label>Nome*</label>
+      </div>
+      <div class="col-85">
+        <input type="text" value="{{ professor.nome }}">
+      </div>
+      <div class="col-35">
+          <label>Titulação*</label>
+      </div>
+      <div class="col-85">
+        <input type="text" value="{{ professor.titulacao }}">
+      </div>          
+    </div>
+    <div class="row">
+      <div class="col-35">
+          <label>Endereço*</label>
+      </div>
+      <div class="col-85">
+        <input type="text" value="{{ professor.endereco }}">
+      </div>
+      <div class="col-35">
+          <label>Telefone*</label>
+      </div>
+      <div class="col-85">
+        <input type="text" value="{{ professor.telefone }}">
+      </div>
+    </div>
+    <div class="row">
+      <button id="formularioBotao" type="submit" class="btn btn-primary">Salvar</button>
+      <a id="formularioBotao" class="btn btn-secondary" href="/lista/">Cancelar</a>
+      <p id="formularioBotao">*Campos Obrigatórios.</p>          
+    </div>
+  </form>
 
 </div>
 
