@@ -67,4 +67,5 @@ def contato(request):
 def excluir_professor(request, nr_item):
     item = get_object_or_404(Professor, pk=nr_item)
     item.delete()
-    return redirect('/lista/')
+    return render(request, 'excluido.html')
+    #return redirect('/lista/')
