@@ -1,37 +1,56 @@
+/* Home Page */
+
 #body{
     background-color: #343a40;
 }
 
+.containerHomePage {    
+    background-color: #343a40;    
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
 .titleHomepage{
     color: white;
-    margin-top: 100px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.h1HomePage{
+    text-align: center;
+    
 }
 
 h2{    
-    padding-bottom: 30px;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
 }
 
 .titleH3{
-    padding-top: 30px;
+    padding-top: 5%;
+    text-align: center;
 }
 
 #footerHomepage{
     background-color: #343a40;
     color: white;
-    margin-top: 90px;
-    padding: 30px 0 20px 0; 
+    margin-top: 15%;    
     font-size: 14px;
     text-align: center;   
     text-shadow: 2px 2px 2px black;
     font-weight: bold;    
 }
 
-#imgFooter{
-    
+#imgFooter{    
     width: 25px;
 }
 
-/*Formulário Adiciona*/
+/* Formulário Adiciona */
 
 .containerFormulario {
     border-radius: 5px;
@@ -39,7 +58,7 @@ h2{
     padding: 50px;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 30px;
+    margin-bottom: 20%;
 }
   
 .col-25 {
@@ -68,7 +87,7 @@ h2{
         margin-bottom: 2%;
 }
 
-#tituloFormularioAdiciona{
+#tituloPaginas{
     margin-top: 20px;
     font-size: 28px;
     color: white;
@@ -78,46 +97,22 @@ h2{
     text-align: center;
 }
 
-/*Formulário Adiciona*/
+/* Lista de professores */
 
-#formularioSalvo{
-    background-color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    height: 420px;
+.containerListaProfessores {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    height: 50%;
+    float: center;
 }
 
-#tituloFormularioSalvo{
-    margin-top: 20px;
-    font-size: 28px;
-    color: white;
-    text-shadow: 4px 4px 4px black;
-    font-family:'Times New Roman';
-    font-weight: bold;
+#tituloSemProfessor{    
     text-align: center;
-}
-
-#formularioVoltar{
-    margin-top: 350px;
-    margin-left: 450px;
-}
-
-/*Lista de professores*/
-#formularioLista{
-    background-color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    height: 420px;
-}
-#elementosFormularioLista{
-    margin-left: 200px;
-    margin-right: -300px;
-}
-
-#tituloFormularioSemProfessor{
-    padding-top: 160px;
+    float: center;    
     font-size: 28px;
     color: red;
     font-family:'Times New Roman';
@@ -126,41 +121,80 @@ h2{
 
 #listaProfessores{
     font-size: 30px;
-    color: black;
+    color: black;    
 }
 
 #lista{
-    padding-top: 10px;
+    padding-top: 2%; 
 }
 
-/*Detalhes Cadastro*/
-#formularioDetalhes{
-    background-color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
-    height: 420px;
+/* Detalhes Cadastro */
+
+.containerDetalhesCadastro {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    height: 50%;
+    float: center;    
 }
-#elementosFormularioDetalhes{
-    margin-left: 250px;
-    margin-right: -300px;
+
+#tituloDetalhes{    
+    font-size: 50px;
+    margin-bottom: 5%;
+    margin-top: 2%;    
+}
+
+.detalhesTitulacaoEndereco{    
+    float: right;
+}
+
+.detalhesMatriculaTelefone{    
+    float: right;
+    margin-left: 30%;    
+}
+
+.botoes{    
+    float: center;    
 }
 
 #detalhesBotao{
-    margin-top: 100px;
-    margin-left: 30px;
-}
-
-#tituloDetalhes{
-    padding-top: 30px;
-    font-size: 50px;
-    margin-bottom: 50px;
+    margin-left: 15%;
+    margin-top: 10%;
     
 }
 
+/* Página Salvo */
+
+.containerformularioSalvo {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    height: 450px;
+    resize: both;
+        
+}
+
+#formularioVoltar{
+    margin: auto;
+    margin-top: 20%;    
+}
+
+.imgFormularioSalvo{
+    margin: auto;
+    width: 200px;
+    resize: both;
+}
+
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, .detalhesTitulacaoEndereco, .detalhesMatriculaTelefone,
+    .botoes, .titleHomepage, .h1HomePage, .titleH3, .imgFormularioSalvo {
       width: 100%;
       margin-top: 0;
     }
-  }
+  }  

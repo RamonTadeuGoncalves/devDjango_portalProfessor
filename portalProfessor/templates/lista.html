@@ -28,29 +28,26 @@ LISTA
     </nav>
 </div>  
 
-<div id="tituloFormularioAdiciona">
+<div id="tituloPaginas">
   <p>LISTA DE PROFESSORES.</p>
 </div>
 
-<div class="container">
+<div class="containerListaProfessores">
 
-  <div id="formularioLista">
-    <div id="elementosFormularioLista">           
-      <ul>
-        {% for item in lista_itens %}
-        <li id="lista">
-          <a href="/item/{{ item.id }}" id="listaProfessores">
-            {{item.titulacao}} - {{item.nome}} 
-          </a>
-        </li>
-        {% empty %}
-          <div id="tituloFormularioSemProfessor">
-            <p>SEM PROFESSORES CADASTRADOS.</p>
-          </div>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+  <ul>
+    {% for item in lista_itens %}
+    <li id="lista">
+      <a href="/item/{{ item.id }}" id="listaProfessores">
+        {{item.titulacao}} - {{item.nome}} 
+      </a>
+    </li>
+    {% empty %}
+      <div id="tituloSemProfessor">
+        <p>SEM PROFESSORES CADASTRADOS.</p>
+      </div>
+    {% endfor %}
+  </ul>
+
 </div>
 
 {% endblock %}
