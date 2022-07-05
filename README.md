@@ -39,17 +39,17 @@ No cabeçalho encontram-se todas as funcionalidades que são:
 - Listar
 - Adicionar
 
-![Home Page](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/home_page.png?token=GHSAT0AAAAAABWBD4B34N5I53SFIDVW4VBIYWEHNDQ)
+![Home Page](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/home_page.png?token=GHSAT0AAAAAABWBD4B3SYOS52WSYHPKM4TUYWEH3BQ)
 
 
 Ao clicar em Adicionar, o formulário para cadastro do professor será exibido.
 
-![Create New Register](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/create_new_register_page.png?token=GHSAT0AAAAAABWBD4B3A3WY4ZVL4GGY57N2YWEHSVQ)
+![Create New Register](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/create_new_register_page.png?token=GHSAT0AAAAAABWBD4B32EPZ6P4O2XQQJP7UYWEH3WA)
 
 Ao clicar em Listar, a lista com todos os cadastros salvos no banco de dados será exibida.
 Para exibir os dados do respectivo professor, o usuário deve clicar sobre o nome do mesmo.
 
-![List Page](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/list_page.png?token=GHSAT0AAAAAABWBD4B27LUDPOMOQHNP4Y46YWEHT2A)
+![List Page](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/list_page.png?token=GHSAT0AAAAAABWBD4B2N2NFPPIV77JQBTT2YWEH4AQ)
 
 A tela com os detalhes do cadastro é exibida.
 ![Detail Page](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/detail_page.png?token=GHSAT0AAAAAABWBD4B2QUX5JRSOW5ADXTQMYWEHV5A)
@@ -60,5 +60,5 @@ Caso o usuário clique em Editar, o formulário com os dados que foram preenchid
 ![Edit Page](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/edit_page.png?token=GHSAT0AAAAAABWBD4B2HAQR4NRCFLX2CU6MYWEHYCA)
 
 O botão Home retorna para a página inicial do sistema.
-![Home Page](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/home_page.png?token=GHSAT0AAAAAABWBD4B34N5I53SFIDVW4VBIYWEHNDQ)
+![Home Page](https://raw.githubusercontent.com/RamonTadeuGoncalves/devDjango_portalProfessor/master/templates/static/media/home_page.png?token=GHSAT0AAAAAABWBD4B3SYOS52WSYHPKM4TUYWEH3BQ)
 
